@@ -1,0 +1,25 @@
+{
+  "name": "modals-js",
+  "version": "0.0.1",
+  "description": "Quick and easy to use modals for web sites and apps.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlfaTrion36/modals-js.git"
+  },
+  "keywords": [
+    "modal",
+    "JavaScript",
+    "npm",
+    "package"
+  ],
+  "author": "Farhan \"AlfaTrion\" Jiwani <farhan@farhanjiwani.com> (https://FarhanJiwani.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlfaTrion36/modal/issues"
+  },
+  "homepage": "https://github.com/AlfaTrion36/modal#readme"
+}
