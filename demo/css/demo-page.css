@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+legend {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+label,
+button {
+  cursor: pointer;
+}
+
+label {
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+label,
+input,
+select,
+textarea {
+  display: block;
+  min-width: 304px;
+}
+
+textarea {
+  min-height: 128px;
+}
+
+input,
+select,
+button {
+  height: 2rem;
+}
+
+.example.ex-tabindex {
+  display: flex;
+  justify-content: center;
+  border: 2px solid #888;
+}
