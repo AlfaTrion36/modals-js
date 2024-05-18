@@ -4,16 +4,23 @@ const isProduction = process.env.NODE_ENV == 'production';
 const stylesHandler = 'style-loader';
 
 const config = {
-    entry: './src/index.js',
+    target: 'web',
+    entry: {
+        index: './src/index.js',
+    },
     output: {
-        path: path.resolve(__dirname, 'dist'),
-        filename: 'index.js',
+        path: path.resolve(__dirname, 'dist/js'),
+        filename: '[name].js',
+        library: 'ModalsJS',
+        libraryTarget: 'umd',
+        umdNamedDefine: true,
     },
     module: {
         rules: [
             {
-                test: /\.(js|jsx)$/i,
+                test: /\.(js)$/i,
                 loader: 'babel-loader',
+                exclude: /node_modules/,
             },
             {
                 test: /\.css$/i,
@@ -29,6 +36,7 @@ const config = {
             },
         ],
     },
+    devtool: 'source-map',
     devServer: {
         open: true,
         host: 'localhost',
